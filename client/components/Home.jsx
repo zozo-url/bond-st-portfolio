@@ -22,6 +22,7 @@ class Home extends React.Component {
                 <button className="circleButtonAbout"><h1 className="aboutText">ABOUT</h1></button>
             </div>            
             <p className="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, animi! Maxime quaerat fugiat rerum voluptas eos, voluptatem accusamus quasi perspiciatis aperiam, suscipit, aliquam laudantium commodi facere doloribus aspernatur iusto est.</p>
+            <p className="uoasc post1">UOASC</p>
             {/* <img className="uoasc" src="./images/uoasc2.png"/> */}
 
     </div>
