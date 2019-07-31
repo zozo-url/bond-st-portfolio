@@ -1,7 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 class Home extends React.Component {
-    constructor(props){
+  constructor (props) {
       super()
       this.state = {
 
@@ -10,23 +11,12 @@ class Home extends React.Component {
     render() {
     return (
     <div className='home-container'>
-        {/* <div className= "hamburger">
-            <i className="fas fa-bars"></i>
-        </div> */}
-        <div className="itemCenter">
-            {/* <h1 className="homeHeader">ZOE CLAASEN</h1> */}
+        <div className= "homeBar">
+            <h1 className="title">Zoe Claasen</h1>
+            <Link to="/about"><p className="subtitle">about</p></Link>
+           <Link to="/projects"><p className="subtitle">projects</p></Link>
         </div>
-            <div className="side">
-                <button className="circleButtonUp"><i className="fa fa-arrow-up arrowUp" aria-hidden="true"></i></button>
-                <button className="circleButtonDown"><i className="fa fa-arrow-down arrowDown" aria-hidden="true"></i></button>
-                <button className="circleButtonAbout"><h1 className="aboutText">ABOUT</h1></button>
-            </div>            
-            <p className="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, animi! Maxime quaerat fugiat rerum voluptas eos, voluptatem accusamus quasi perspiciatis aperiam, suscipit, aliquam laudantium commodi facere doloribus aspernatur iusto est.</p>
-            <p className="uoasc post1">UOASC</p>
-            {/* <img className="uoasc" src="./images/uoasc2.png"/> */}
-
     </div>
-    
     )
     }
 
