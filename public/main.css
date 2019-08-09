@@ -1,12 +1,22 @@
-.dot {
-  width: 2rem;
-  height: 2rem;
-  border: 1px #ccc solid;
-  border-radius: 50%;
+body {
+  font-family: Helvetica, sans-serif;
+  color: black;
 }
-
-button {
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
+.home-container {
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  width: 100vw;
+  height: 100vh;
+  justify-items: center;
+  align-items: center;
+}
+.homeBar {
+  text-align: center;
+}
+.subtitle {
+  display: inline-block;
+  padding-right: 1em;
+  margin-top: 0em;
 }
