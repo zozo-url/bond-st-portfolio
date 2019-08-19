@@ -12,7 +12,7 @@ class Home extends React.Component {
     return (
       <div className='home-container'>
         <div className='homeBar'>
-          <h1 className='title'>Zoe Claasen</h1>
+          <h1 className='title'>hey</h1>
           <Link to='/about'><p className='subtitle'>about</p></Link>
           <Link to='/projects'><p className='subtitle'>projects</p></Link>
         </div>
