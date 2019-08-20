@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import logo from '../../public/images/bondLogoWhite.png'
+import logo from '../../public/images/bond-logo-white.png'
 // replace title with image
 // add video logo
 // css = centre everything
