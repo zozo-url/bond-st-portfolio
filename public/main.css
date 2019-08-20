@@ -3,21 +3,41 @@ body {
   background-color: black;
   color: white;
 }
-.home-container {
-  display: grid;
-  grid-gap: 3px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  width: 100vw;
-  height: 100vh;
-  justify-items: center;
-  align-items: center;
+.space {
+  padding: 6.5em;
 }
-.homeBar {
+.home-container {
+  margin: auto;
   text-align: center;
 }
-.subtitle {
+.home-menu {
   display: inline-block;
-  padding-right: 1em;
-  margin-top: 0em;
+  padding-left: 2.7em;
+ }
+ .home-menu p {  
+  display: inline-block;
+  padding-right: 1.8em;
+  padding-top: 2em;
+  color: white;
+  letter-spacing:1em;
+  transition-duration: 0.7s;
+ }
+ .home-menu p:visited {
+   color: white;
+ }
+ .home-menu p:hover {
+   color: blue;
+}
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 17em;
+}
+.house {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 14em;
+  margin-top: 1em;
 }
