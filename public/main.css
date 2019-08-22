@@ -20,7 +20,7 @@ body {
   padding-top: 2em;
   color: white;
   letter-spacing:1em;
-  transition-duration: 0.7s;
+  transition-duration: 0.3s;
  }
  .menu p:visited {
    color: white;
@@ -71,4 +71,13 @@ h1 {
 .socials i {
   font-size: 1.5em;
   margin-right: 3em;
+  transition-duration: 0.3s;
+  color: white;
+}
+
+.socials i:visited {
+  color: white;
+}
+.socials i:hover {
+  color: blue;
 }
