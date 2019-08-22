@@ -10,11 +10,11 @@ body {
   margin: auto;
   text-align: center;
 }
-.home-menu {
+.menu {
   display: inline-block;
   padding-left: 2.7em;
  }
- .home-menu p {  
+ .menu p {  
   display: inline-block;
   padding-right: 1.8em;
   padding-top: 2em;
@@ -22,13 +22,13 @@ body {
   letter-spacing:1em;
   transition-duration: 0.7s;
  }
- .home-menu p:visited {
+ .menu p:visited {
    color: white;
  }
- .home-menu p:hover {
+ .menu p:hover {
    color: blue;
 }
-.logo {
+.logo-home {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -40,4 +40,35 @@ body {
   margin-right: auto;
   max-width: 14em;
   margin-top: 1em;
+}
+/* nav */
+.logo-nav {
+  display: block;
+  max-width: 11em;
+}
+.nav-menu {
+  text-align: left;
+}
+.nav-menu p {
+  display:block;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* info */
+#description {
+  display: block;
+  width: 17em;
+  text-align: right;
+}
+
+.socials {
+  display: block;
+  text-align:right;
+}
+.socials i {
+  font-size: 1.5em;
+  margin-right: 3em;
 }

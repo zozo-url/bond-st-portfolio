@@ -9,9 +9,10 @@ class Edit extends React.Component {
 
   render () {
     return (
-      <div className='home-container'>
+      <div>
         <Nav />
         <h1>EDIT</h1>
+        
       </div>
     )
   }
