@@ -34,6 +34,7 @@
     "react-dom": "^16.8.6",
     "react-router": "^5.0.0",
     "react-router-dom": "^5.0.0",
+    "react-router-hash-link": "^1.2.2",
     "standard": "^13.1.0",
     "url-loader": "^2.1.0",
     "webpack": "^4.30.0",

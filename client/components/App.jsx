@@ -1,5 +1,6 @@
 import React from 'react'
 import { HashRouter as Router, Route } from 'react-router-dom'
+import { HashLink as Link } from 'react-router-hash-link'
 import Home from './Home'
 import Info from './Info'
 import Edit from './Edit'
