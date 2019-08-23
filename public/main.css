@@ -4,7 +4,6 @@ body {
   color: white;
 }
 
-
 .space {
   padding: 6.5em;
 }
@@ -22,13 +21,13 @@ body {
   padding-top: 2em;
   color: white;
   letter-spacing:1em;
-  transition-duration: 0.3s;
+  transition-duration: 0.4s;
  }
  .menu p:visited {
-   color: white;
+  text-decoration: underline;
  }
  .menu p:hover {
-   color: blue;
+   color: red;
 }
 .logo-home {
   display: block;
@@ -46,20 +45,34 @@ body {
 /* nav */
 .nav {
   display: inline-block;
-  padding-bottom: 5em;
+  position: fixed;
+  margin: 4em 0em 0em 4em;
 }
 .logo-nav {
   display: block;
   max-width: 11em;
 }
-.nav-menu {
-  text-align: left;
-}
+
 .nav-menu p {
   display:block;
 }
-
-
+.menu-link {
+text-decoration: none;
+color: white;
+transition: 0.4s;
+}
+.menu-link:hover {
+color:red;
+  }
+  
+.sub-menu {
+margin-left: 2em;
+padding: 0.3em;
+letter-spacing:0.3em;
+  }
+.bold-title {
+  color: red !important;
+}
 /* info */
 .space-left {
   display: block;

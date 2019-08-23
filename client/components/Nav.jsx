@@ -8,15 +8,23 @@ const Nav = () => (
   <div className='nav'>
     <Link to='/'><img src={logo} className='logo-nav' /></Link>
     <div className='menu nav-menu'>
-      <Link to='/info'><p>INFO</p></Link>
-      <Link to='/edit'><p>EDIT</p></Link>
+
+      {window.location.href.split('#')[1] === '/info' ? <Link to='/info' className='menu-link'><p className='bold-title'>INFO</p></Link> : <Link to='/info' className='menu-link'><p>INFO</p></Link>}
+      {window.location.href.split('#')[1] === '/edit' ? <Link to='/edit' className='menu-link'><p className='bold-title'>EDIT</p></Link> : <Link to='/edit' className='menu-link'><p>EDIT</p></Link>}
       {window.location.href.split('#')[1] === '/edit' ? links.edit.map(video => {
-        return <div><Link to={'/edit#' + video.title}>{video.title}</Link> <br /> </div>
+        return <div className='sub-menu'>
+          <Link to={'/edit#' + video.title} className='menu-link'>{video.title}</Link>
+        </div>
       }) : console.log('') }
-      <Link to='/unit'><p>UNIT</p></Link>
+
+      {window.location.href.split('#')[1] === '/unit' ? <Link to='/unit' className='menu-link'><p className='bold-title'>UNIT</p></Link> : <Link to='/unit' className='menu-link'><p>UNIT</p></Link>}
+
       {window.location.href.split('#')[1] === '/unit' ? links.unit.map(video => {
-        return <div><Link to={'/edit#' + video.title}>{video.title}</Link> <br /> </div>
+        return <div className='sub-menu'>
+          <Link to={'/edit#' + video.title} className='menu-link'>{video.title}</Link>
+        </div>
       }) : console.log('') }
+
     </div>
   </div>
 )
