@@ -20,7 +20,7 @@ body {
   padding-right: 1.8em;
   padding-top: 2em;
   color: white;
-  letter-spacing:1em;
+  letter-spacing:0.6em;
   transition-duration: 0.4s;
  }
  .menu p:visited {
@@ -44,9 +44,10 @@ body {
 }
 /* nav */
 .nav {
+  background-color: black;
   display: inline-block;
   position: fixed;
-  margin: 4em 0em 0em 4em;
+  margin: 2em 0em 0em 2em;
 }
 .logo-nav {
   display: block;
@@ -55,9 +56,14 @@ body {
 
 .nav-menu p {
   display:block;
+  width: 30%;
+  margin: 0;
+  margin-left: -0.3em;
 }
 .menu-link {
+  margin-left: 0;
 text-decoration: none;
+font-size: 1.5em;
 color: white;
 transition: 0.4s;
 }
@@ -103,4 +109,22 @@ letter-spacing:0.3em;
 }
 .socials i:hover {
   color: blue;
+}
+/* edit and unit */
+.video-div {
+  display: block;
+  padding-right: 5%;
+}
+.video-div h1 {
+  letter-spacing:0.3em;
+  font-weight: lighter;
+  margin-left: 0;
+  text-decoration: none;
+  font-size: 4em;
+  color: white;
+}
+.video {
+  margin-top:-84px;
+width: 800px;
+height: 502px;
 }

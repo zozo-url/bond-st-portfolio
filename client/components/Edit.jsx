@@ -5,14 +5,19 @@ import links from '../../video-links/links.json'
 const Edit = () => (
   <div className='edit'>
     <Nav />
-    <h1 align='right'>EDIT</h1>
     {links.edit.map((video, i) => {
-      return <div key={i} align='right'>
-        <h1 id={video.title}>{video.title}</h1>
-        <h1>{video.date}</h1>
-        <iframe src={video.url} width='500' height='281' frameBorder='0' webkitallowfullscreen='true' mozallowfullscreen='true' allowFullScreen='true' />
+      return <div className='video-div' key={i} align='right'>
         <br />
-        <p>{video.description}</p>
+        <br />
+        <br />
+        <br />
+        <h1 id={video.title}>{video.title}</h1>
+        {/* <h1 align='right'>{video.description}</h1> */}
+        {/* <h1>{video.date}</h1> */}
+        <iframe className='video ' id={video.title} src={video.url} frameBorder='0' webkitallowfullscreen='true' mozallowfullscreen='true' allowFullScreen='true' />
+        <br />
+        <br />
+        <br />
       </div>
     })}
   </div>
