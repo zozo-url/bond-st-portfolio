@@ -4,8 +4,8 @@ import Nav from './Nav'
 const Info = () => (
   <div>
     <Nav />
-    <div className='space-left'>
-      <p>This is a description about Bond St. Bond St hosts dance music events and makes video content during these events. They aim to make really cool visual content related to dance music and fun times.</p>
+    <div className='info' align='right'>
+      <p>THIS IS A DESCRIPTION ABOUT BOND ST. BOND ST HOSTS DANCE MUSIC EVENTS AND MAKES VIDEO CONTENT DURING THESE EVENTS. THEY AIM TO MAKE REALLY COOL VISUAL CONTENT RELATED TO DANCE MUSIC AND FUN TIMES.</p>
       <div className='socials'>
         <a href='https://soundcloud.com/bond_st'><i className='fab fa-soundcloud' /></a>
         <a href='https://vimeo.com/bondst'><i className='fab fa-vimeo-square' /></a>
