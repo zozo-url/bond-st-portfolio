@@ -6,20 +6,26 @@ const Edit = () => (
   <div className='edit'>
     <Nav />
     {links.edit.map((video, i) => {
-      return <div className='video-div' key={i} align='right'>
+      return <div className='video-div' id={video.title} key={i} align='right'>
         <br />
         <br />
         <br />
         <br />
-        <h1 id={video.title}>{video.title}</h1>
-        {/* <h1 align='right'>{video.description}</h1> */}
+        <br />
+        <br />
+        <h1>{video.title}</h1> <h1>{video.date}</h1>
         {/* <h1>{video.date}</h1> */}
         <iframe className='video ' id={video.title} src={video.url} frameBorder='0' webkitallowfullscreen='true' mozallowfullscreen='true' allowFullScreen='true' />
-        <br />
+        <h1 align='right'>{video.description}</h1>
         <br />
         <br />
       </div>
     })}
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
   </div>
 )
 export default Edit

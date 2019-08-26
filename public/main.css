@@ -55,7 +55,7 @@ body {
 }
 
 .nav-menu p {
-  display:block;
+  display: block;
   width: 30%;
   margin: 0;
   margin-left: -0.3em;
@@ -63,7 +63,7 @@ body {
 .menu-link {
   margin-left: 0;
 text-decoration: none;
-font-size: 1.5em;
+font-size: 1em;
 color: white;
 transition: 0.4s;
 }
@@ -72,8 +72,9 @@ color:red;
   }
   
 .sub-menu {
-margin-left: 2em;
-padding: 0.3em;
+  font-size: 0.7em;
+margin-left: 3em;
+padding: 0.2em;
 letter-spacing:0.3em;
   }
 .bold-title {
@@ -120,11 +121,11 @@ letter-spacing:0.3em;
   font-weight: lighter;
   margin-left: 0;
   text-decoration: none;
-  font-size: 4em;
+  font-size: 1em;
   color: white;
 }
 .video {
-  margin-top:-84px;
+  /* margin-top:-84px; */
 width: 800px;
 height: 502px;
 }
