@@ -5,16 +5,26 @@ import links from '../../video-links/links.json'
 const Unit = () => (
   <div className='unit'>
     <Nav />
-    <h1 align='right'>UNIT</h1>
     {links.unit.map((video, i) => {
-      return <div key={i} align='right'>
-        <h1>{video.title}</h1>
-        <h1>{video.date}</h1>
-        <iframe src={video.url} width='500' height='281' frameBorder='0' webkitallowfullscreen='true' mozallowfullscreen='true' allowFullScreen={true} />
+      return <div className='video-div' id={video.title} key={i} align='right'>
         <br />
-        <p>{video.description}</p>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <h1>{video.title}</h1> <h1>{video.date}</h1>
+        <iframe className='video ' id={video.title} src={video.url} frameBorder='0' webkitallowfullscreen='true' mozallowfullscreen='true' allowFullScreen='true' />
+        <h1 align='right'>{video.description}</h1>
+        <br />
+        <br />
       </div>
     })}
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
   </div>
 )
 
