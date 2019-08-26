@@ -4,7 +4,7 @@
   "description": "React Redux using express",
   "main": "server/index.js",
   "scripts": {
-    "start": "node server & webpack",
+    "start": "node server && webpack",
     "dev": "nodemon server & webpack --watch"
   },
   "author": "EDA",
