@@ -3,21 +3,129 @@ body {
   background-color: black;
   color: white;
 }
-.home-container {
-  display: grid;
-  grid-gap: 3px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  width: 100vw;
-  height: 100vh;
-  justify-items: center;
-  align-items: center;
+
+.space {
+  padding: 6.5em;
 }
-.homeBar {
+.home-container {
+  margin: auto;
   text-align: center;
 }
-.subtitle {
+.menu {
   display: inline-block;
-  padding-right: 1em;
-  margin-top: 0em;
+  padding-left: 2.7em;
+ }
+ .menu p {  
+  display: inline-block;
+  padding-right: 1.8em;
+  padding-top: 2em;
+  color: white;
+  letter-spacing:0.6em;
+  transition-duration: 0.4s;
+ }
+ .menu p:visited {
+  text-decoration: underline;
+ }
+ .menu p:hover {
+   color: red;
+}
+.logo-home {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 17em;
+}
+.house {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 14em;
+  margin-top: 1em;
+}
+/* nav */
+.nav {
+  background-color: black;
+  display: inline-block;
+  position: fixed;
+  margin: 2em 0em 0em 2em;
+}
+.logo-nav {
+  display: block;
+  max-width: 11em;
+}
+
+.nav-menu p {
+  display: block;
+  width: 30%;
+  margin: 0;
+  margin-left: -0.3em;
+}
+.menu-link {
+  margin-left: 0;
+text-decoration: none;
+font-size: 1em;
+color: white;
+transition: 0.4s;
+}
+.menu-link:hover {
+color:red;
+  }
+  
+.sub-menu {
+  font-size: 0.7em;
+margin-left: 3em;
+padding: 0.2em;
+letter-spacing:0.3em;
+  }
+.bold-title {
+  color: red !important;
+}
+/* info */
+.info {
+  font-size: 1em;
+  display:fixed;
+  text-align: justify;
+  max-width: 500px;
+  min-width: 280px;
+  padding-top: 20%;
+  margin-left: 40%;
+  margin-right: 10%;
+  line-height: 3em;
+  letter-spacing: 0.3em;
+}
+
+.socials {
+  display: block;
+  text-align: center;
+}
+.socials i {
+  font-size: 2em;
+  text-align: left;
+  margin-right: 20%;
+  transition-duration: 0.3s;
+  color: white;
+}
+
+.socials i:visited {
+  color: white;
+}
+.socials i:hover {
+  color: red;
+}
+/* edit and unit */
+.video-div {
+  display: block;
+  padding-right: 5%;
+}
+.video-div h1 {
+  letter-spacing:0.3em;
+  font-weight: lighter;
+  margin-left: 0;
+  text-decoration: none;
+  font-size: 1em;
+  color: white;
+}
+.video {
+width: 800px;
+height: 502px;
 }

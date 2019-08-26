@@ -1,13 +1,31 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { HashLink as Link } from 'react-router-hash-link'
+import logo from '../../public/images/bond-logo-white.png'
+import links from '../../video-links/links.json'
 // menu + sub menu, must pass value in from the component it's it to know what to display
 // map thru a .json file??
 const Nav = () => (
   <div className='nav'>
-    <h1>Nav</h1>
-    <Link to='/info'><p className='subtitle'>INFO</p></Link>
-    <Link to='/edit'><p className='subtitle'>EDIT</p></Link>
-    <Link to='/unit'><p className='subtitle'>UNIT</p></Link>
+    <Link to='/'><img src={logo} className='logo-nav' /></Link>
+    <div className='menu nav-menu'>
+
+      {window.location.href.split('#')[1] === '/info' ? <Link to='/info' className='menu-link'><p className='bold-title'>INFO</p></Link> : <Link to='/info' className='menu-link'><p>INFO</p></Link>}
+      {window.location.href.split('#')[1] === '/edit' ? <Link to='/edit' className='menu-link'><p className='bold-title'>EDIT</p></Link> : <Link to='/edit' className='menu-link'><p>EDIT</p></Link>}
+      {window.location.href.split('#')[1] === '/edit' ? links.edit.map(video => {
+        return <div className='sub-menu'>
+          <Link to={'/edit#' + video.title} className='menu-link sub-link'>{video.title}</Link>
+        </div>
+      }) : console.log('') }
+
+      {window.location.href.split('#')[1] === '/unit' ? <Link to='/unit' className='menu-link'><p className='bold-title'>UNIT</p></Link> : <Link to='/unit' className='menu-link'><p>UNIT</p></Link>}
+
+      {window.location.href.split('#')[1] === '/unit' ? links.unit.map(video => {
+        return <div className='sub-menu'>
+          <Link to={'/edit#' + video.title} className='menu-link sub-link'>{video.title}</Link>
+        </div>
+      }) : console.log('') }
+
+    </div>
   </div>
 )
 
