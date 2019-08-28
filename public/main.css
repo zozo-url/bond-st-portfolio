@@ -11,9 +11,17 @@ body {
   height: 100vh;
   width: 100vw;
   background-image: url("./images/house.gif");
+  position:fixed;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
   background-repeat: no-repeat;
   background-position: center;
-  margin: 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: auto;
   text-align: center;
 }
 .menu {
