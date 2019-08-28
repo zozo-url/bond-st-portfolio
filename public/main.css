@@ -3,7 +3,7 @@ body {
   background-color: black;
   color: white;
   transition: 0s;
-  font-size: 1em;
+  font-size: 1.2em;
 }
 /* home */
 .space {
@@ -33,7 +33,6 @@ body {
  }
  .menu-link {  
   display: inline-block;
-  padding-right: 1.8em;
   padding-top: 2em;
   letter-spacing:0.6em;
   text-decoration: none;
@@ -45,6 +44,12 @@ body {
  .menu-link:hover {
   transition: 0.7s;
    color: red;
+}
+
+
+.home-menu-link {
+  padding-right: 1.8em;
+  padding-left: 1.8em;
 }
 .logo-home {
   display: block;
@@ -73,6 +78,8 @@ body {
     text-decoration: none;
     font-size: 1.5em;
     padding-top: 0.3em;
+    padding-right: 0em;
+    padding-left: 0em;
   }
  }
 
