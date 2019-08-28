@@ -26,12 +26,12 @@ body {
   margin: auto;
   text-align: center;
 }
-.home-menu {
+.menu {
   display: inline-block;
   padding-left: 2.7em;
   position: center;
  }
- .home-menu-link {  
+ .menu-link {  
   display: inline-block;
   padding-right: 1.8em;
   padding-top: 2em;
@@ -39,10 +39,10 @@ body {
   text-decoration: none;
   color: white;
  }
- .home-menu-link:visited {
+ .menu-link:visited {
   text-decoration: underline;
  }
- .home-menu-link:hover {
+ .menu-link:hover {
   transition: 0.7s;
    color: red;
 }
@@ -88,20 +88,22 @@ body {
   display: block;
   max-width: 11em;
 }
-
-.nav-menu p {
+.nav-menu-link {
   display: block;
-  width: 30%;
+}
+.nav-menu-link p {
   margin: 0;
   margin-left: -0.3em;
 }
-
 .sub-menu {
   font-size: 0.7em;
 margin-left: 3em;
-padding: 0.2em;
+margin-top: 0.2em;
 letter-spacing:0.3em;
   }
+.sub-link {
+  padding: 0.1em;
+}
 .bold-title {
   color: red !important;
 }
@@ -118,7 +120,6 @@ letter-spacing:0.3em;
   line-height: 3em;
   letter-spacing: 0.3em;
 }
-
 .socials {
   display: block;
   text-align: center;

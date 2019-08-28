@@ -9,9 +9,9 @@ const Home = () => (
     <img src={logo} className='logo-home' />
     {/* <img src={house} className='house' /> */}
     <div className='home-menu'>
-      <Link to='/info' className='home-menu-link'><p>INFO</p></Link>
-      <Link to='/edit' className='home-menu-link'><p>EDIT</p></Link>
-      <Link to='/unit' className='home-menu-link'><p>UNIT</p></Link>
+      <Link to='/info' className='menu-link home-menu-link'><p>INFO</p></Link>
+      <Link to='/edit' className='menu-link home-menu-link'><p>EDIT</p></Link>
+      <Link to='/unit' className='menu-link home-menu-link'><p>UNIT</p></Link>
     </div>
   </div>
 )
