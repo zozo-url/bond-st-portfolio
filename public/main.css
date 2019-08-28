@@ -8,7 +8,12 @@ body {
   padding: 6.5em;
 }
 .home-container {
-  margin: auto;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("./images/house.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
   text-align: center;
 }
 .menu {
@@ -36,6 +41,7 @@ body {
   max-width: 17em;
 }
 .house {
+  visibility: hidden;
   display: block;
   margin-left: auto;
   margin-right: auto;
