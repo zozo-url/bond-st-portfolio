@@ -2,10 +2,12 @@ body {
   font-family: Helvetica, sans-serif;
   background-color: black;
   color: white;
+  transition: 0s;
+  font-size: 1em;
 }
-
+/* home */
 .space {
-  padding-top: 20vw;
+  padding-top: 18vw;
 }
 .home-container {
   height: 100vh;
@@ -24,22 +26,24 @@ body {
   margin: auto;
   text-align: center;
 }
-.menu {
+.home-menu {
   display: inline-block;
   padding-left: 2.7em;
+  position: center;
  }
- .menu p {  
+ .home-menu-link {  
   display: inline-block;
   padding-right: 1.8em;
   padding-top: 2em;
-  color: white;
   letter-spacing:0.6em;
-  transition-duration: 0.4s;
+  text-decoration: none;
+  color: white;
  }
- .menu p:visited {
+ .home-menu-link:visited {
   text-decoration: underline;
  }
- .menu p:hover {
+ .home-menu-link:hover {
+  transition: 0.7s;
    color: red;
 }
 .logo-home {
@@ -56,6 +60,23 @@ body {
   max-width: 14em;
   margin-top: 1em;
 }
+@media only screen and (max-width: 768px) {
+  /* Home for mobile phones: */
+  .space {
+    padding-top: 15vw;
+  }
+.home-menu {
+  margin-top: 1em;
+}
+.home-menu-link {
+    display: block;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding-top: 0.3em;
+  }
+ }
+
+
 /* nav */
 .nav {
   background-color: black;
@@ -74,17 +95,7 @@ body {
   margin: 0;
   margin-left: -0.3em;
 }
-.menu-link {
-  margin-left: 0;
-text-decoration: none;
-font-size: 1em;
-color: white;
-transition: 0.4s;
-}
-.menu-link:hover {
-color:red;
-  }
-  
+
 .sub-menu {
   font-size: 0.7em;
 margin-left: 3em;

@@ -8,10 +8,10 @@ const Home = () => (
     <div className='space'> </div>
     <img src={logo} className='logo-home' />
     {/* <img src={house} className='house' /> */}
-    <div className='menu'>
-      <Link to='/info'><p>INFO</p></Link>
-      <Link to='/edit'><p>EDIT</p></Link>
-      <Link to='/unit'><p>UNIT</p></Link>
+    <div className='home-menu'>
+      <Link to='/info' className='home-menu-link'><p>INFO</p></Link>
+      <Link to='/edit' className='home-menu-link'><p>EDIT</p></Link>
+      <Link to='/unit' className='home-menu-link'><p>UNIT</p></Link>
     </div>
   </div>
 )
