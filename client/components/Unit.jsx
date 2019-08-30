@@ -3,7 +3,7 @@ import Nav from './Nav'
 import links from '../../video-links/links.json'
 
 const Unit = () => (
-  <div className='unit'>
+  <div className='edit-unit'>
     <Nav />
     {links.unit.map((video, i) => {
       return <div className='video-div' id={video.title} key={i} align='right'>
