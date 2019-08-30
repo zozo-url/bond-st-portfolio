@@ -25,6 +25,17 @@ const Nav = () => (
         </div>
       }) : console.log('') }
 
+      {/* mobile version of menu */}
+      {window.location.href.split('#')[1] === '/edit' ? links.edit.map(video => {
+        return <div className='sub-menu sub-menu-mobile'>
+          <Link to={'/edit#' + video.title} className='menu-link nav-menu-link sub-link-mobile'>{video.title}</Link>
+        </div>
+      }) : console.log('') }
+      {window.location.href.split('#')[1] === '/unit' ? links.unit.map(video => {
+        return <div className='sub-menu sub-menu-mobile'>
+          <Link to={'/edit#' + video.title} className='menu-link nav-menu-link sub-link-mobile'>{video.title}</Link>
+        </div>
+      }) : console.log('') }
     </div>
   </div>
 )
