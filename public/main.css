@@ -168,8 +168,6 @@ margin-bottom: 2em;
   margin-bottom: 1em;
 }
 }
-
-
 /* info */
 .info {
   font-size: 1em;
@@ -208,14 +206,22 @@ margin-bottom: 2em;
   display: block;
   padding-top: 7.7em;
   padding-right: 3em;
+  color: white;
 }
 .video-div h1 {
   letter-spacing:0.3em;
-  font-weight: lighter;
-  margin-left: 0;
+  font-weight: normal;
+  margin-left: auto;
   text-decoration: none;
   font-size: 1em;
-  color: white;
+}
+.video-div p {
+  letter-spacing:0.17em;
+  font-weight: lighter;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+  font-size: 0.85em;
 }
 .video {
   display: block;
@@ -230,22 +236,33 @@ margin-bottom: 2em;
   text-align: center;
   left: auto;
   right: auto;
+  padding-top: 4em;
+  padding-right: 0em;
 }
   .video-div h1 {
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
     max-width: 50%;
-    text-align: center;
-    margin-left: 2em;
-    padding-right: 0.5em;
-    padding-left: 0.5em;
+    text-align: left;
+    width: 45%;
+  }
+  .video-date {
+display: inline-block;
+text-align:right;
+margin-left: auto;
+margin-right: auto;
+width: 45%;
   }
   .video {
     display: block;
-    width: 100vw;
-    height: 100vw;
-   margin: -15vw 0  -15vw 0;
-   margin-left: -0.5em;
+    width: 100%;
+  margin: 0;
+  margin: 0;
   }
+.video-info {
+  display:block;
+  width: 100%;
+  text-align: center;
+}
 }

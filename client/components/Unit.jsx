@@ -7,24 +7,13 @@ const Unit = () => (
     <Nav />
     {links.unit.map((video, i) => {
       return <div className='video-div' id={video.title} key={i} align='right'>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <h1>{video.title}</h1> <h1>{video.date}</h1>
+        <h1>{video.title}</h1> <p className='video-date'>{video.date}</p>
         <iframe className='video ' id={video.title} src={video.url} frameBorder='0' webkitallowfullscreen='true' mozallowfullscreen='true' allowFullScreen='true' />
-        <h1 align='right'>{video.description}</h1>
+        <p className='video-info' align='right'>{video.description}</p>
         <br />
         <br />
       </div>
     })}
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
   </div>
 )
 
