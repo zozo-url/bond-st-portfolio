@@ -170,39 +170,55 @@ margin-bottom: 2em;
 }
 /* info */
 .info {
+  display: block;
   font-size: 1em;
-  display:fixed;
-  text-align: justify;
-  max-width: 500px;
-  min-width: 380px;
-  padding-top: 20%;
-  margin-left: 60%;
-  margin-right: 5%;
-  line-height: 3em;
+  padding-top: 15em;
+  padding-right: 3em;
   letter-spacing: 0.3em;
+}
+.info-text {
+ width: 40%;
+ text-align: justify;
 }
 .socials {
   display: block;
   text-align: center;
+  width: 40%;
 }
 .socials i {
   font-size: 2em;
-  text-align: left;
-  margin-right: 20%;
+  text-align: center;
+  width: 30%;
   transition-duration: 0.3s;
   color: white;
 }
-
 .socials i:visited {
   color: white;
 }
 .socials i:hover {
   color: red;
 }
+@media only screen  and (max-width: 768px) {
+  /* Info for mobile phones: */
+  .info {
+    font-size: 1em;
+    padding-top: 2em;
+    padding-right: 0em;
+    letter-spacing: 0.3em;
+  }
+  .info-text {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 3em;
+   }
+   .socials {
+     width: 100%;
+     margin: auto;
+     margin-bottom: 0rem
+   }
+} 
 /* edit and unit */
-/* TO DO  */
-/* make video responsively sized */
-.video-div {
+.video-div {                                          
   display: block;
   padding-top: 7.7em;
   padding-right: 3em;
