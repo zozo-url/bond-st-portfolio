@@ -1,13 +1,13 @@
 body {
   font-family: Helvetica, sans-serif;
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
   transition: 0s;
   font-size: 1.2em;
 }
 /* home */
 .space {
-  padding-top: 18vw;
+  padding-top: 30vh;
 }
 .home-container {
   height: 100vh;
@@ -32,10 +32,9 @@ body {
  }
  .menu-link {  
   display: inline-block;
-  padding-top: 2em;
   letter-spacing:0.6em;
   text-decoration: none;
-  color: white;
+  color: black;
  }
  .menu-link:visited {
   text-decoration: underline;
@@ -44,8 +43,6 @@ body {
   transition: 0.7s;
    color: red;
 }
-
-
 .home-menu-link {
   padding-right: 1.8em;
   padding-left: 1.8em;
@@ -64,6 +61,18 @@ body {
   max-width: 14em;
   margin-top: 1em;
 }
+.socials-home {
+  /* width: 50%; */
+  margin-top: 5vh;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.socials-home i {
+  color: black;
+  font-size: 1.5em !important;
+  width: 20% !important;
+}
 @media only screen and (max-width: 768px) {
   /* Home for mobile phones: */
   .space {
@@ -80,11 +89,14 @@ body {
     padding-right: 0em;
     padding-left: 0em;
   }
+  .socials-home {
+    margin-top: 55vh;
+  }
  }
 
 /* nav */
 .nav {
-  background-color: black;
+  background-color: white;
   display: inline-block;
   position: fixed;
   margin: 2em 0em 0em 2em;
@@ -190,10 +202,10 @@ margin-bottom: 2em;
   text-align: center;
   width: 30%;
   transition-duration: 0.3s;
-  color: white;
+  color: black;
 }
 .socials i:visited {
-  color: white;
+  color: black;
 }
 .socials i:hover {
   color: red;
@@ -222,7 +234,7 @@ margin-bottom: 2em;
   display: block;
   padding-top: 7.7em;
   padding-right: 3em;
-  color: white;
+  color: black;
 }
 .video-div h1 {
   letter-spacing:0.3em;

@@ -1,9 +1,8 @@
 import React from 'react'
 import { HashLink as Link } from 'react-router-hash-link'
-import logo from '../../public/images/bond-logo-white.png'
+import logo from '../../public/images/logo-black.png'
 import links from '../../video-links/links.json'
-// menu + sub menu, must pass value in from the component it's it to know what to display
-// map thru a .json file??
+
 const Nav = () => (
   <div className='nav'>
     <Link to='/'><img src={logo} className='logo-nav' /></Link>

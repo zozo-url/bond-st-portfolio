@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import logo from '../../public/images/bond-logo-white.png'
-import house from '../../public/images/house.gif'
+import logo from '../../public/images/logo-black.png'
 
 const Home = () => (
   <div className='home-container'>
@@ -12,6 +11,11 @@ const Home = () => (
       <Link to='/info' className='menu-link home-menu-link'><p>INFO</p></Link>
       <Link to='/edit' className='menu-link home-menu-link'><p>EDIT</p></Link>
       <Link to='/unit' className='menu-link home-menu-link'><p>UNIT</p></Link>
+      <div className='socials socials-home' align='center'>
+        <a href='https://soundcloud.com/bond_st'><i className='fab fa-soundcloud' /></a>
+        <a href='https://vimeo.com/bondst'><i className='fab fa-vimeo-square' /></a>
+        <a href='https://www.instagram.com/bond__st/?hl=en'><i className='fab fa-instagram' /></a>
+      </div>
     </div>
   </div>
 )
