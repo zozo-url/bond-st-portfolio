@@ -158,7 +158,6 @@ letter-spacing:0.3em;
     display:none;
     margin-left: 0em;
     margin-top: 0em;
-    /* padding-left: 0.5em */
   }
   .sub-link {
     display: none;
@@ -192,7 +191,6 @@ margin-bottom: 2em;
 }
 .sub-menu-mobile {
   display: block;
-  font-family: 'Harbour';
 }
 .sub-link-mobile {
   padding-top: 0.5em;
