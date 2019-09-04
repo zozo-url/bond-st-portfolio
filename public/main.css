@@ -119,6 +119,7 @@ body {
   display: inline-block;
   position: fixed;
   margin: 2em 0em 0em 2em;
+  
 }
 .logo-nav {
   display: block;
@@ -129,7 +130,6 @@ body {
   padding-left: 2em;
 }
 .nav-menu-link p {
-  margin: 0;
   margin-left: -0.3em;
 }
 .sub-menu {
@@ -276,6 +276,10 @@ margin-bottom: 2em;
   width: 50vw;
   height: 100vw;
  margin: -35vw 0  -35vw 0;
+}
+
+.video-info {
+  font-family: 'Harbour-light', san-serif;
 }
 
 @media only screen and (max-width: 768px) {

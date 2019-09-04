@@ -6,7 +6,6 @@ const Home = () => (
   <div className='home-container'>
     <div className='space'> </div>
     <img src={logo} className='logo-home' />
-    {/* <img src={house} className='house' /> */}
     <div className='home-menu'>
       <Link to='/edit' className='menu-link home-menu-link'><p>EDIT</p></Link>
       <Link to='/unit' className='menu-link home-menu-link'><p>UNIT</p></Link>
