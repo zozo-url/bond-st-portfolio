@@ -7,8 +7,6 @@ const Nav = () => (
   <div className='nav'>
     <Link to='/'><img src={logo} className='logo-nav' /></Link>
     <div className='menu nav-menu'>
-
-      {window.location.href.split('#')[1] === '/info' ? <Link to='/info' className='menu-link nav-menu-link'><p className='bold-title'>INFO</p></Link> : <Link to='/info' className='menu-link nav-menu-link'><p>INFO</p></Link>}
       {window.location.href.split('#')[1] === '/edit' ? <Link to='/edit' className='menu-link nav-menu-link'><p className='bold-title'>EDIT</p></Link> : <Link to='/edit' className='menu-link nav-menu-link'><p>EDIT</p></Link>}
       {window.location.href.split('#')[1] === '/edit' ? links.edit.map(video => {
         return <div className='sub-menu'>
