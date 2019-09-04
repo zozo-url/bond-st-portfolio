@@ -1,5 +1,24 @@
+@font-face {
+  font-family: 'Harbour';
+  src: url('./font/HarbourMedium.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Harbour-bold';
+  src: url('./font/HarbourBold.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Harbour-light';
+  src: url('./font/HarbourLight.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  font-family: Helvetica, sans-serif;
+  font-family: 'Harbour-bold', sans-serif;
   background-color: white;
   color: black;
   transition: 0s;
@@ -114,6 +133,7 @@ body {
   margin-left: -0.3em;
 }
 .sub-menu {
+  font-family: 'Harbour-light';
   font-size: 0.7em;
 margin-left: 3em;
 margin-top: 0.2em;
@@ -171,6 +191,7 @@ margin-bottom: 2em;
 }
 .sub-menu-mobile {
   display: block;
+  font-family: 'Harbour';
 }
 .sub-link-mobile {
   padding-top: 0.5em;
@@ -245,7 +266,6 @@ margin-bottom: 2em;
 }
 .video-div p {
   letter-spacing:0.17em;
-  font-weight: lighter;
   margin-left: auto;
   margin-right: auto;
   text-decoration: none;
