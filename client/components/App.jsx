@@ -6,6 +6,7 @@ import Unit from './Unit'
 const App = () => (
   <Router>
     <div className='app-container'>
+      {/* routing what files display on different url paths */}
       <Route exact path='/' component={Home} />
       <Route path='/edit' component={Edit} />
       <Route path='/unit' component={Unit} />

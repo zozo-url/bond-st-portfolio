@@ -5,7 +5,7 @@ import App from './components/App'
 
 document.addEventListener('DOMContentLoaded', () => {
   render(
-      <App />,
+    <App />,
     document.getElementById('app')
   )
 })

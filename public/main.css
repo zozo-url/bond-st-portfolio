@@ -16,7 +16,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 body {
   font-family: 'Harbour-bold', sans-serif;
   background-color: white;
@@ -25,9 +24,6 @@ body {
   font-size: 1.2em;
 }
 /* home */
-.space {
-  padding-top: 30vh;
-}
 .home-container {
   height: 100vh;
   width: 100vw;
@@ -44,6 +40,7 @@ body {
   background-size: cover;
   margin: auto;
   text-align: center;
+  padding-top: 30vh;
 }
 
  .menu-link {  
@@ -91,8 +88,8 @@ body {
 }
 @media only screen and (max-width: 768px) {
   /* Home for mobile phones: */
-  .space {
-    padding-top: 15vw;
+  .home-container {
+    padding-top: 0vh;
   }
 .home-menu {
   margin-top: 0em;
@@ -107,10 +104,11 @@ body {
   }
   .socials-home {
     margin-top: 4em !important;
+    width: 100vw !important;
   }
 .socials-home i {
-  padding-right: 1.6em;
-  padding-left: 1.6em;
+  width: 25%;
+  padding: 0;
 }
  }
 
@@ -182,7 +180,7 @@ letter-spacing:0.3em;
 .nav-menu-link{
   display: inline-block;
   padding-left: 0.5em;
-  width: 30%;
+  width: 40%;
 }
 .nav-menu-link p {
 margin-left: 0em;
@@ -306,7 +304,6 @@ width: 45%;
   .video {
     display: block;
     width: 100%;
-  margin: 0;
   margin: 0;
   }
 .video-info {

@@ -4,9 +4,9 @@ import logo from '../../public/images/logo-black.png'
 
 const Home = () => (
   <div className='home-container'>
-    <div className='space'> </div>
     <img src={logo} className='logo-home' />
     <div className='home-menu'>
+      {/* comment out the two lines below to remove them from view */}
       <Link to='/edit' className='menu-link home-menu-link'><p>EDIT</p></Link>
       <Link to='/unit' className='menu-link home-menu-link'><p>UNIT</p></Link>
       <div className='socials socials-home' align='center'>
