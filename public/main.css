@@ -17,6 +17,8 @@
   font-style: normal;
 }
 body {
+  margin: 0;
+  padding: 0;
   font-family: 'Harbour-bold', sans-serif;
   background-color: white;
   color: black;
@@ -27,8 +29,10 @@ body {
 .home-container {
   height: 100vh;
   width: 100vw;
+  padding-top: 10em;
   background-image: url("./images/house.gif");
-  position:fixed;
+background-attachment: fixed; 
+position: fixed;
   left: 0px;
   top: 0px;
   z-index: -1;
@@ -64,7 +68,8 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  max-width: 17em;
+  margin-top: 2em;
+  max-width: 15em;
 }
 .house {
   visibility: hidden;
@@ -75,16 +80,15 @@ body {
   margin-top: 1em;
 }
 .socials-home {
+  display: inline-block;
   margin-top: 4vh;
   margin-left: auto;
   margin-right: auto;
-  width: 100% !important;
 }
 .socials-home i {
   color: black;
   font-size: 1.5em !important;
-  padding-right: 1.8em;
-  padding-left: 1.8em;
+  width: 100px;
 }
 @media only screen and (max-width: 768px) {
   /* Home for mobile phones: */
@@ -163,16 +167,16 @@ letter-spacing:0.3em;
   .nav {
   display: block;
   position: static;
-  margin: 0;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   align-content: center;
 }
 .logo-nav {
-  margin-left: auto;
+  margin-left: auto; 
   margin-right: auto;
-  max-width: 50%;
+  margin-top: 2em;
+  max-width: 15em;
 }
 .nav-menu {
   width: 100%;
@@ -246,9 +250,9 @@ margin-bottom: 2em;
    }
 } 
 /* edit and unit */
-.video-div {                                          
+.video-div {                                    
   display: block;
-  padding-top: 7.7em;
+padding-top: 6.6em; 
   padding-right: 3em;
   color: black;
 }
@@ -269,8 +273,7 @@ margin-bottom: 2em;
 .video {
   display: block;
   width: 50vw;
-  height: 100vw;
- margin: -35vw 0  -35vw 0;
+  height: 25vw;
 }
 
 .video-info {
@@ -283,7 +286,7 @@ margin-bottom: 2em;
   text-align: center;
   left: auto;
   right: auto;
-  padding-top: 4em;
+  padding-top: 2.5em;
   padding-right: 0em;
 }
   .video-div h1 {
@@ -303,8 +306,8 @@ width: 45%;
   }
   .video {
     display: block;
-    width: 100%;
-  margin: 0;
+    width: 100vw;
+    height: 30vh;
   }
 .video-info {
   display:block;

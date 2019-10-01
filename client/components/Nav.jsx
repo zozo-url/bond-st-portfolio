@@ -21,7 +21,7 @@ const Nav = () => (
       {/* unit sub-menu  */}
       {window.location.href.split('#')[1] === '/unit' && links.unit.map(video => {
         return <div className='sub-menu'>
-          <Link to={'/edit#' + video.title} className='menu-link nav-menu-link sub-link'>{video.title}</Link>
+          <Link to={'/unit#' + video.title} className='menu-link nav-menu-link sub-link'>{video.title}</Link>
         </div>
       })}
 
@@ -33,7 +33,7 @@ const Nav = () => (
       })}
       {window.location.href.split('#')[1] === '/unit' && links.unit.map(video => {
         return <div className='sub-menu sub-menu-mobile'>
-          <Link to={'/edit#' + video.title} className='menu-link nav-menu-link sub-link-mobile'>{video.title}</Link>
+          <Link to={'/unit#' + video.title} className='menu-link nav-menu-link sub-link-mobile'>{video.title}</Link>
         </div>
       })}
     </div>
